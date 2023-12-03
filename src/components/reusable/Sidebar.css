@@ -1,0 +1,71 @@
+.nav-menu {
+  background-color: #c38eb4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75%;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  /* Bei dem Großbildschirm-Ansicht hinzufügen */
+  /* border-top-right-radius: 2.5rem;
+      border-bottom-right-radius: 2.5rem; */
+  padding: 0 1.8rem;
+}
+.close-btn {
+  font-size: 2rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+}
+#checkclose-btn {
+  display: none;
+}
+.close-btn i {
+  color: #26425a;
+  cursor: pointer;
+  /* transition: "color 0.2s"; */
+}
+.close-btn i:hover {
+  color: #e1cbd7;
+}
+.navlink-container {
+  margin: 2rem auto;
+  border: 3px solid #26425a;
+  border-radius: 4.9rem;
+  width: 55%;
+  height: 3.4rem;
+  /* transition: "background-color 0.2s, color 0.2s"; */
+  &:hover {
+    background-color: #26425a;
+    .nav-link {
+      color: #c38eb4;
+    }
+  }
+}
+.navlink-container:hover .nav-link i {
+  color: #c38eb4;
+}
+.nav-link {
+  text-decoration: none;
+  color: #26425a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem 1.87rem;
+}
+/* .nav-item {
+      transition: background-color 0.2s, color 0.2s;
+    } */
+.nav-link i {
+  font-family: FontAwesome;
+  color: #26425a;
+  font-size: 1.38rem;
+}
+
+.nav-link p {
+  font-size: 1.12rem;
+  font-weight: 600;
+  width: 50%;
+}
