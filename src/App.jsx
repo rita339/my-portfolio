@@ -1,9 +1,16 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
+import { Navbar } from "./components/reusable/Navbar.jsx";
+import { Footer } from "./components/reusable/Footer.jsx";
 
 function App() {
   return (
     <>
-      <h1>Julia's Portfolio</h1>
+      <Navbar />
+      {/* <main>
+        <Outlet />
+      </main>
+      <Footer /> */}
     </>
   );
 }
