@@ -28,7 +28,7 @@ export const Sidebar = ({ isActive, toggleButton }) => {
           <Fade
             left
             className="navlink-container"
-            style={{ marginTop: "6rem" }}
+            style={{ marginTop: "8rem" }}
           >
             <NavLink
               className="nav-link"
