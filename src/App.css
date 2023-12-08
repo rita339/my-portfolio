@@ -21,9 +21,13 @@
   --base-100: #ffffff;
   --base-200: #f6f6f7;
   --base-300: #e8e8ea;
-  --base-content: #181a2a;
+  --base-content: #131313;
 }
 
 body {
   background-color: var(--base-200);
+}
+
+section {
+  height: 100vh;
 }
