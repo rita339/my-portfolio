@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <main>
+      <main>
         <Outlet />
       </main>
-      <Footer /> */}
+      {/* <Footer /> */}
     </>
   );
 }
