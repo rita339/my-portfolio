@@ -24,10 +24,6 @@
   --base-content: #131313;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--base-200);
 }

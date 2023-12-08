@@ -1,6 +1,7 @@
 import fakeimage from "../images/fake-bild.png";
 import "./Home.css";
 import Blob from "../images/blob.png";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -44,12 +45,14 @@ export const Home = () => {
           laboriosam ab similique. Aut nam exercitationem alias itaque officiis
           consequatur cumque inventore?
         </p>
-        <button>
-          <p> Let's Talk</p>
-          <div className="icon-btn">
-            <i className="fa-solid fa-arrow-right-long"></i>
-          </div>
-        </button>
+        <Link to="/contact" className="contact-link">
+          <button>
+            <p> Let's Talk</p>
+            <div className="icon-btn">
+              <i className="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </button>
+        </Link>
       </div>
     </section>
   );

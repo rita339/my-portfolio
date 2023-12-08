@@ -12,6 +12,7 @@
 .close-btn {
   font-size: 2rem;
   position: absolute;
+  z-index: 2;
   left: 16rem;
   top: 1.25rem;
 }

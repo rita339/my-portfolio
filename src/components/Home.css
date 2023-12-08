@@ -82,7 +82,9 @@
     z-index: 0;
   }
 }
-
+.contact-link {
+  text-decoration: none;
+}
 .description {
   display: flex;
   flex-direction: column;
