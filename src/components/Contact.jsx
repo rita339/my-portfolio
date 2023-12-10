@@ -1,12 +1,8 @@
 import "./Contact.css";
-import map from "../images/location.png";
 import { useState } from "react";
+import { ContactItem } from "./ContactItem.jsx";
 
 export const Contact = () => {
-  const emailAdress = "iuliia.erbis@gmail.com";
-  const telegramUsername = "@UserjuliaErb";
-  const phoneNumber = "+49 (176) 287 229 56";
-
   const [nameInput, setNameInput] = useState("");
   const [emailInput, setEmailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
@@ -40,6 +36,9 @@ export const Contact = () => {
         },
         body: JSON.stringify(formDataObj),
       });
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
       const data = await response.json();
       console.log(data);
       setEmailSend(true);
@@ -108,55 +107,7 @@ export const Contact = () => {
           </div>
         </form>
       )}
-
-      <div className="card-container">
-        <div className="map">
-          <img src={map} alt="map" />
-        </div>
-
-        <div className="card-group">
-          <div className="card-01">
-            <p>Country:</p>
-            <p>City:</p>
-            <p>Street:</p>
-          </div>
-          <div className="card-02">
-            <p>Germany</p>
-            <p>41812 Erkelenz</p>
-            <p>Hoogenhof 49A</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="card-container">
-        <div className="envelop">
-          <i className="fa-solid fa-envelope"></i>
-        </div>
-        <div className="card-group">
-          <div className="card-01">
-            <p>Email:</p>
-            <p>Telegram:</p>
-          </div>
-          <div className="card-02">
-            <a href={`mailto:${emailAdress}`}>{emailAdress}</a>
-            <a href={`tel:${telegramUsername}`}>{telegramUsername}</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="card-container">
-        <div className="phone">
-          <i className="fa-solid fa-mobile"></i>
-        </div>
-        <div className="card-group">
-          <div className="card-01">
-            <p>Mobile:</p>
-          </div>
-          <div className="card-02">
-            <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
-          </div>
-        </div>
-      </div>
+      <ContactItem />
     </section>
   );
 };
