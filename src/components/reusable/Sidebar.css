@@ -1,11 +1,11 @@
 .nav-menu {
   background-color: var(--base-200);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  transform: translateX(-5%);
+  /* transform: translateX(-5%); */
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
 }

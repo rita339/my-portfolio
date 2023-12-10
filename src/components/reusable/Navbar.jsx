@@ -24,7 +24,7 @@ export const Navbar = () => {
           </button>
           <label className="burger-icon">
             <input type="checkbox" id="checkbox" onClick={toggleButton} />
-            <i className={`fa-solid fa-bars${isActive ? "hidden" : ""}`}></i>
+            <i className="fa-solid fa-bars"></i>
           </label>
         </div>
         <Sidebar isActive={isActive} toggleButton={toggleButton} />
