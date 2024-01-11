@@ -75,7 +75,7 @@
     top: 0;
     left: 0;
     z-index: 0;
-    transform: translate(-28%, -8%);
+    transform: translate(-28%, -6%);
   }
   &.blob img {
     position: absolute;

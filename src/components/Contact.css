@@ -5,7 +5,7 @@
   width: 29.75rem;
   gap: 3rem;
   background-color: var(--base-100);
-  margin-top: 10rem;
+  margin: 8rem auto 0;
   padding: 4rem 1rem;
 }
 
@@ -49,6 +49,11 @@ form {
     }
   }
 }
+
+.form-group.invalid input {
+  border: 2px solid red;
+}
+
 #name,
 #email,
 #message {
@@ -61,19 +66,11 @@ form {
 #name,
 #email {
   height: 3rem;
+  text-indent: 0.625rem;
 }
 
 #message {
   padding: 0.75rem;
-}
-
-input[type="text"],
-textarea,
-input[type="email"]::placeholder {
-  padding-left: 0.75rem;
-  font-family: Inter;
-  color: var(--base-content);
-  font-size: 1rem;
 }
 
 .submit-btn {

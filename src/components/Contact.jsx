@@ -7,9 +7,11 @@ export const Contact = () => {
   const [emailInput, setEmailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
   const [emailSend, setEmailSend] = useState(false);
+  const [isNameValid, setIsNameValid] = useState(true);
 
   const nameHandler = (event) => {
     setNameInput(event.target.value);
+    setIsNameValid(true);
   };
 
   const emailHandler = (event) => {
@@ -22,6 +24,12 @@ export const Contact = () => {
 
   const sendHandler = async (event) => {
     event.preventDefault();
+    if (nameInput.trim() === "") {
+      setIsNameValid(false);
+      return;
+    }
+    setIsNameValid(true);
+
     const formDataObj = {
       nameInput,
       emailInput,
@@ -62,8 +70,7 @@ export const Contact = () => {
         <form onSubmit={sendHandler}>
           <div className="container">
             <h2>Leave a Message</h2>
-
-            <div className="form-group">
+            <div className={`form-group ${!isNameValid ? "invalid" : ""}`}>
               <label htmlFor="name">Name* </label>
               <input
                 type="text"
