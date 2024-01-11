@@ -34,7 +34,6 @@
   border-radius: 4.9rem;
   width: 50%;
   height: 3.4rem;
-  transition: "background-color 0.2s, color 0.2s";
   &:hover {
     background-color: #1313130d;
   }
@@ -61,7 +60,6 @@
   font-family: FontAwesome;
   color: var(--accent);
   font-size: 1.38rem;
-  transition: background-color 0.2s, color 0.2s;
 }
 
 .nav-link p {

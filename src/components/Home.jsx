@@ -1,4 +1,4 @@
-import fakeimage from "../images/fake-bild.png";
+import profilBild from "../images/profilBild.png";
 import "./Home.css";
 import Blob from "../images/blob.png";
 import { Link } from "react-router-dom";
@@ -31,14 +31,14 @@ export const Home = () => {
         </div>
         <div className="img-container">
           <div className="blob">
-            <img src={Blob} alt="Blob" width="180%" height="180%" />
+            <img src={Blob} alt="Blob" width="470" height="450" />
           </div>
-          <img src={fakeimage} alt="profil Bild" className="home-img" />
+          <img src={profilBild} alt="profil Bild" className="home-img" />
         </div>
       </div>
 
       <div className="description">
-        <h2>I'am a Web Developer</h2>
+        <h2>I am a Web Developer</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
           laudantium nam maiores doloremque, adipisci quas aliquid autem aperiam
