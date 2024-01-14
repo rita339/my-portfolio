@@ -31,7 +31,7 @@ export const Home = () => {
         </div>
         <div className="img-container">
           <div className="blob">
-            <img src={Blob} alt="Blob" width="470" height="450" />
+            <img src={Blob} alt="Blob" width="450" height="450" />
           </div>
           <img src={profilBild} alt="profil Bild" className="home-img" />
         </div>

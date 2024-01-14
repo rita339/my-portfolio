@@ -108,3 +108,14 @@ form {
     }
   }
 }
+
+.answer {
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 500;
+  & i {
+    color: var(--accent);
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+}
