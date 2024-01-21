@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -29,9 +29,12 @@ body {
   font-family: Inter;
   color: var(--base-content);
 }
-
+/* main {
+  width: 33.75rem;
+} */
 section {
-  min-height: 100vh;
+  min-height: 80vh;
+  overflow-y: hidden;
 }
 
 a {

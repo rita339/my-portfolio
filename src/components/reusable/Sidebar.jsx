@@ -48,7 +48,7 @@ export const Sidebar = ({ isActive, toggleButton }) => {
           <div className="navlink-container">
             <NavLink className="nav-link" to="/resume" onClick={navLinkHandler}>
               <i className="fa-solid fa-file"></i>
-              <p>Resume</p>
+              <p>Résumé</p>
             </NavLink>
           </div>
           <div className="navlink-container">
