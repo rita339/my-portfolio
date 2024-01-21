@@ -56,6 +56,15 @@ export const ContactItem = () => {
           </div>
         </div>
       </div>
+
+      {/* <ul className="slide">
+        <li>React</li>
+        <li>JavaScript</li>
+        <li>HTML / CSS</li>
+        <li>Node.js</li>
+        <li>Git</li>
+        <li>MongoDB</li>
+      </ul> */}
     </>
   );
 };

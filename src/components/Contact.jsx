@@ -8,6 +8,7 @@ export const Contact = () => {
   const [messageInput, setMessageInput] = useState("");
   const [emailSend, setEmailSend] = useState(false);
   const [isNameValid, setIsNameValid] = useState(true);
+  const [isEmailValid, setIsEmailValid] = useState(true);
 
   const nameHandler = (event) => {
     setNameInput(event.target.value);
@@ -16,6 +17,7 @@ export const Contact = () => {
 
   const emailHandler = (event) => {
     setEmailInput(event.target.value);
+    setIsEmailValid(true);
   };
 
   const messageHandler = (event) => {
@@ -29,7 +31,10 @@ export const Contact = () => {
       return;
     }
     setIsNameValid(true);
-
+    if (emailInput.trim() === "") {
+      setIsEmailValid(false);
+      return;
+    }
     const formDataObj = {
       nameInput,
       emailInput,
@@ -65,7 +70,10 @@ export const Contact = () => {
         </p>
       </div>
       {emailSend ? (
-        <p>Thank You!</p> // kann man in separate componente auslagern
+        <p className="answer">
+          <i className="fa-solid fa-circle-check"></i>
+          Thank You!
+        </p>
       ) : (
         <form onSubmit={sendHandler}>
           <div className="container">
@@ -76,18 +84,16 @@ export const Contact = () => {
                 type="text"
                 id="name"
                 required
-                placeholder=" "
                 value={nameInput}
                 onChange={nameHandler}
               />
             </div>
-            <div className="form-group">
+            <div className={`form-group ${!isEmailValid ? "invalid" : ""}`}>
               <label htmlFor="email">Email*</label>
               <input
                 type="email"
                 id="email"
                 required
-                placeholder=" "
                 value={emailInput}
                 onChange={emailHandler}
               />
@@ -98,7 +104,6 @@ export const Contact = () => {
                 id="message"
                 cols="30"
                 rows="10"
-                placeholder=" "
                 value={messageInput}
                 onChange={messageHandler}
               ></textarea>

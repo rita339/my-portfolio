@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 29.75rem;
+  /* width: 29.75rem; */
+  width: 33.75rem;
   gap: 3rem;
   background-color: var(--base-100);
   margin: 8rem auto 0;
@@ -10,6 +11,7 @@
 }
 
 .info-container {
+  width: 29.75rem;
   & h1 {
     text-align: center;
     line-height: 2rem;
@@ -96,8 +98,6 @@ form {
       padding: 0.625rem;
       border-radius: 2.5rem;
       background-color: var(--base-content);
-      width: 1.25rem;
-      height: 1.25rem;
       & i {
         color: var(--accent);
         display: flex;
@@ -106,5 +106,16 @@ form {
         font-size: 1.3rem;
       }
     }
+  }
+}
+
+.answer {
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 500;
+  & i {
+    color: var(--accent);
+    font-size: 1.8rem;
+    margin-right: 1rem;
   }
 }

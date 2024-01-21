@@ -31,12 +31,11 @@ export const Home = () => {
         </div>
         <div className="img-container">
           <div className="blob">
-            <img src={Blob} alt="Blob" width="470" height="450" />
+            <img src={Blob} alt="Blob" width="400" height="400" />
           </div>
           <img src={profilBild} alt="profil Bild" className="home-img" />
         </div>
       </div>
-
       <div className="description">
         <h2>I am a Web Developer</h2>
         <p>
@@ -54,6 +53,14 @@ export const Home = () => {
           </button>
         </Link>
       </div>
+      {/* <ul className="home-slide">
+        <li>MongoDB</li>
+        <li>React</li>
+        <li>JavaScript</li>
+        {/* <li>HTML/CSS</li>
+        <li>Node.js</li>
+        <li>Git</li> */}
+      {/* </ul> */}
     </section>
   );
 };
