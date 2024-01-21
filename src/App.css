@@ -34,7 +34,7 @@ body {
 } */
 section {
   min-height: 80vh;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 a {
