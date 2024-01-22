@@ -1,0 +1,129 @@
+.Resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  /* width: 29.75rem; */
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  & .heading-resume {
+    width: 29.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    & h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2rem;
+    }
+    & p {
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      opacity: 0.6;
+    }
+  }
+  & .content-resume {
+    display: flex;
+    width: 29.8125rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    background-color: var(--base-100);
+  }
+  & .card-resume {
+    display: flex;
+    width: 26.8125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  & .item-resume {
+    display: flex;
+    width: 26.8125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  & .item-heading {
+    display: flex;
+    /* width: 12.1875rem; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    & h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.75rem;
+    }
+  }
+  & .badge-resume {
+    border-radius: 0.375rem;
+    background: rgba(60, 194, 136, 0.1);
+    display: flex;
+    padding: 0.25rem 0.75rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    & p {
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1rem;
+      color: var(--accent);
+    }
+  }
+  & .info-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    & h3 {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.75rem;
+    }
+    & p {
+      width: 23.5rem;
+      line-height: 1.5rem;
+      opacity: 0.5;
+    }
+  }
+  & .divider-resume {
+    width: 26.8125rem;
+    height: 0.0625rem;
+    opacity: 0.1;
+    background-color: var(--base-content);
+  }
+  & button {
+    display: flex;
+    padding: 0.25rem 0.25rem 0.25rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 3.5rem;
+    background-color: var(--accent);
+    border: none;
+    cursor: pointer;
+    & .btn-resume {
+      display: flex;
+      padding: 0.625rem;
+      align-items: center;
+      gap: 0.625rem;
+      border-radius: 2.5rem;
+      background-color: var(--base-content);
+      & i {
+        width: 1.25rem;
+        height: 1.25rem;
+        color: var(--accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
