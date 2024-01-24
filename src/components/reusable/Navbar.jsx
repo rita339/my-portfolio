@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Sidebar } from "./Sidebar.jsx";
 import Logoimage from "../../images/Logo.png";
 import colorfillImage from "../../images/color.png";
+import Menu from "../../images/menu.png";
 
 export const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -24,7 +25,7 @@ export const Navbar = () => {
           </button>
           <label className="burger-icon">
             <input type="checkbox" id="checkbox" onClick={toggleButton} />
-            <i className="fa-solid fa-bars"></i>
+            <img src={Menu} alt="burger-menu-icon" />
           </label>
         </div>
         <Sidebar isActive={isActive} toggleButton={toggleButton} />
