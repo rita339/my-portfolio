@@ -14,12 +14,13 @@ export const Sidebar = ({ isActive, toggleButton }) => {
               type="checkbox"
               id="checkclose-btn"
               onClick={toggleButton}
-              onKeyDown={(event) => {
-                if (event.key === "Enter") {
-                  event.preventDefault();
-                  toggleButton();
-                }
-              }}
+              //   onKeyDown={(event) => {
+              //     if (event.key === "Enter") {
+              //       event.preventDefault();
+              //       toggleButton();
+              //     }
+              //   }
+              // }
             />
             <i className="fa-solid fa-xmark"></i>
           </label>
@@ -29,10 +30,17 @@ export const Sidebar = ({ isActive, toggleButton }) => {
               <p>Home</p>
             </NavLink>
           </div>
+
           <div className="navlink-container">
-            <NavLink className="nav-link" to="/about" onClick={navLinkHandler}>
-              <i className="fa-solid fa-user"></i>
-              <p>About</p>
+            <NavLink className="nav-link" to="/resume" onClick={navLinkHandler}>
+              <i className="fa-solid fa-file"></i>
+              <p>Résumé</p>
+            </NavLink>
+          </div>
+          <div className="navlink-container">
+            <NavLink className="nav-link" to="/skills" onClick={navLinkHandler}>
+              <i className="fa-solid fa-gear"></i>
+              <p>Skills</p>
             </NavLink>
           </div>
           <div className="navlink-container">
@@ -43,12 +51,6 @@ export const Sidebar = ({ isActive, toggleButton }) => {
             >
               <i className="fa-solid fa-folder"></i>
               <p>Projects</p>
-            </NavLink>
-          </div>
-          <div className="navlink-container">
-            <NavLink className="nav-link" to="/resume" onClick={navLinkHandler}>
-              <i className="fa-solid fa-file"></i>
-              <p>Résumé</p>
             </NavLink>
           </div>
           <div className="navlink-container">

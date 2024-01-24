@@ -1,4 +1,5 @@
 import "./Resume.css";
+import CV from "./assets/Resume.pdf";
 
 export const Resume = () => {
   return (
@@ -72,13 +73,14 @@ export const Resume = () => {
 
             <div className="divider-resume"></div>
           </div>
-          {/* <a href={} download={}></a> */}
-          <button>
-            Résumé
-            <div className="btn-resume">
-              <i className="fa-solid fa-download"></i>
-            </div>
-          </button>
+          <a href={CV} download rel="noreferrer">
+            <button>
+              Résumé
+              <div className="btn-resume">
+                <i className="fa-solid fa-download"></i>
+              </div>
+            </button>
+          </a>
         </div>
       </div>
     </section>

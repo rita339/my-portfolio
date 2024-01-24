@@ -25,11 +25,8 @@
     }
   }
   & .content-resume {
-    display: flex;
     width: 29.8125rem;
     padding: 1.5rem;
-    flex-direction: column;
-    align-items: flex-start;
     gap: 0.625rem;
     border-radius: 1.25rem;
     background-color: var(--base-100);
@@ -95,6 +92,9 @@
     height: 0.0625rem;
     opacity: 0.1;
     background-color: var(--base-content);
+  }
+  a:hover {
+    color: red;
   }
   & button {
     display: flex;
