@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <section className="home-container">
-      <div className="container-1">
-        <div className="container-2">
+      <div className="user-info">
+        <div className="info">
           <div className="title">
             <h1>Julia Erbis</h1>
             <div className="border"></div>
@@ -31,14 +31,14 @@ export const Home = () => {
         </div>
         <div className="img-container">
           <div className="blob">
-            <img src={Blob} alt="Blob" width="400" height="400" />
+            <img src={Blob} alt="Blob" />
           </div>
           <img src={profilBild} alt="profil Bild" className="home-img" />
         </div>
       </div>
       <div className="description">
         <h2>I am a Web Developer</h2>
-        <p>
+        <p className="desc">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
           laudantium nam maiores doloremque, adipisci quas aliquid autem aperiam
           laboriosam ab similique. Aut nam exercitationem alias itaque officiis
@@ -53,14 +53,12 @@ export const Home = () => {
           </button>
         </Link>
       </div>
-      {/* <ul className="home-slide">
-        <li>MongoDB</li>
-        <li>React</li>
-        <li>JavaScript</li>
-        {/* <li>HTML/CSS</li>
+      <ul className="skills-list">
+        <li>Bootstrap</li>
         <li>Node.js</li>
-        <li>Git</li> */}
-      {/* </ul> */}
+        <li>Git</li>
+        <li>React</li>
+      </ul>
     </section>
   );
 };

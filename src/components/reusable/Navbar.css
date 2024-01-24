@@ -50,3 +50,12 @@ header {
     opacity: 1;
   }
 }
+
+@media screen and (min-width: 704px) {
+  header {
+    width: 44rem;
+  }
+  .nav-container {
+    width: 40rem;
+  }
+}
