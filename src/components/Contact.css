@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 29.75rem; */
-  width: 33.75rem;
+  /* width: 33.75rem; */
   gap: 3rem;
   background-color: var(--base-100);
   margin: 8rem auto 0;

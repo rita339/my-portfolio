@@ -28,13 +28,13 @@ body {
   background-color: var(--base-200);
   font-family: Inter;
   color: var(--base-content);
+  overflow-x: hidden;
 }
 /* main {
   width: 33.75rem;
 } */
 section {
   min-height: 80vh;
-  /* overflow-y: hidden; */
 }
 
 a {
