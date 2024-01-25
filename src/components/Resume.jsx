@@ -30,9 +30,9 @@ export const Resume = () => {
                 Pulvinar quisque sed amet, nulla nunc.
               </p>
             </div>
-
-            <div className="divider-resume"></div>
           </div>
+
+          <div className="divider-resume"></div>
           {/* Item ---- 02 */}
           <div className="item-resume">
             <div className="item-heading">
@@ -50,9 +50,9 @@ export const Resume = () => {
                 Pulvinar quisque sed amet, nulla nunc.
               </p>
             </div>
-
-            <div className="divider-resume"></div>
           </div>
+          <div className="divider-resume"></div>
+
           {/* Item ----- 03 */}
           <div className="item-resume">
             <div className="item-heading">
@@ -70,9 +70,9 @@ export const Resume = () => {
                 Pulvinar quisque sed amet, nulla nunc.
               </p>
             </div>
-
-            <div className="divider-resume"></div>
           </div>
+          <div className="divider-resume"></div>
+
           <a href={CV} download rel="noreferrer">
             <button>
               Résumé

@@ -190,5 +190,8 @@
       display: flex;
       justify-content: space-evenly;
     }
+    & button:hover {
+      background-color: var(--accent-focus);
+    }
   }
 }

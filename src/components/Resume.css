@@ -4,8 +4,8 @@
   align-items: center;
   gap: 2rem;
   /* width: 29.75rem; */
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
   & .heading-resume {
     width: 29.75rem;
     display: flex;
@@ -124,6 +124,40 @@
         align-items: center;
         justify-content: center;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 704px) {
+  .Resume {
+    gap: 3rem;
+    & .heading-resume {
+      h1 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      p {
+        width: 27.375rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+    & .content-resume {
+      width: 40rem;
+    }
+    & .card-resume {
+      width: 37rem;
+    }
+    & .item-resume {
+      width: 37rem;
+      display: flex;
+      flex-direction: row;
+    }
+    & .divider-resume {
+      width: 37rem;
+    }
+    & button:hover {
+      background-color: var(--accent-focus);
     }
   }
 }
