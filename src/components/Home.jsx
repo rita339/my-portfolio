@@ -53,12 +53,6 @@ export const Home = () => {
           </button>
         </Link>
       </div>
-      <ul className="skills-list">
-        <li>Bootstrap</li>
-        <li>Node.js</li>
-        <li>Git</li>
-        <li>React</li>
-      </ul>
     </section>
   );
 };

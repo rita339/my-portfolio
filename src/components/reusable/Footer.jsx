@@ -11,6 +11,12 @@ export const Footer = () => {
   return (
     <>
       <div className="footer">
+        <ul className="sliding-text">
+          <li>Bootstrap</li>
+          <li>Node.js</li>
+          <li>Git</li>
+          <li>React</li>
+        </ul>
         <div className="footer-content">
           <div className="footer-top">
             <h1>Let's Work Together</h1>

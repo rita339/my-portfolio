@@ -150,22 +150,6 @@
   }
 }
 
-.skills-list {
-  display: flex;
-  width: 33.75rem;
-  justify-content: space-around;
-  padding: 1rem 2rem;
-  align-items: center;
-  gap: 2rem;
-  background-color: var(--accent);
-  margin-top: 5rem;
-  & li {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    text-transform: uppercase;
-  }
-}
-
 @media screen and (min-width: 704px) {
   .home-container {
     width: 44rem;
@@ -223,10 +207,5 @@
       padding: 0.375rem 0.375rem 0.375rem 1.5rem;
       gap: 1.25rem;
     }
-  }
-  .skills-list {
-    padding: 1.5rem 2rem;
-    gap: 3rem;
-    width: 44rem;
   }
 }
