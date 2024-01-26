@@ -157,5 +157,8 @@ form {
     .container {
       width: 19.25rem;
     }
+    & button:hover {
+      background-color: var(--accent-focus);
+    }
   }
 }

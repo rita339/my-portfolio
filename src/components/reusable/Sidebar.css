@@ -54,17 +54,34 @@
   justify-content: center;
   gap: 1rem;
   padding: 0.8rem 1.87rem;
+  & i {
+    font-family: FontAwesome;
+    color: var(--accent);
+    font-size: 1.38rem;
+  }
+  & p {
+    font-size: 1.12rem;
+    font-weight: 600;
+    width: 45%;
+    color: var(--secondary);
+  }
 }
 
-.nav-link i {
-  font-family: FontAwesome;
-  color: var(--accent);
-  font-size: 1.38rem;
-}
-
-.nav-link p {
-  font-size: 1.12rem;
-  font-weight: 600;
-  width: 45%;
-  color: var(--secondary);
+@media screen and (min-width: 704px) {
+  .close-btn {
+    font-size: 2.5rem;
+    left: 21rem;
+    top: 2.5rem;
+  }
+  .navlink-container {
+    height: 4rem;
+    width: 40%;
+    display: grid;
+    place-items: center;
+  }
+  .nav-link {
+    width: 100%;
+    gap: 1.5rem;
+    text-align: left;
+  }
 }
