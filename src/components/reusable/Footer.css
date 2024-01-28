@@ -213,3 +213,46 @@
     gap: 7.4375rem;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    width: 80rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    .sliding-text {
+      grid-column: span 2;
+    }
+    .footer-content {
+      grid-column: span 2;
+      padding-top: 6rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      .footer-top {
+        grid-column: span 2;
+      }
+    }
+    .container-card {
+      justify-self: center;
+      gap: 8.5rem;
+    }
+    .container-card01 {
+      gap: 8.5rem;
+      margin-top: 0.5rem;
+
+      .card-footer {
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+    .line {
+      grid-column: span 2;
+      width: 100%;
+    }
+    .copyright-container {
+      width: 80rem;
+      grid-column: span 2;
+    }
+  }
+}

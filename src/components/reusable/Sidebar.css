@@ -99,3 +99,25 @@
     }
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .nav-menu {
+    width: 28%;
+    .close-btn {
+      font-size: 2rem;
+      left: 18rem;
+      top: 2.5rem;
+    }
+    .navlink-container {
+      height: 3.4rem;
+    }
+    .nav-link {
+      p {
+        font-size: 1rem;
+      }
+      i {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

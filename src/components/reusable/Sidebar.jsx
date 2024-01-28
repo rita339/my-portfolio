@@ -10,18 +10,7 @@ export const Sidebar = ({ isActive, toggleButton }) => {
       {isActive && (
         <ul className="nav-menu">
           <label className="close-btn">
-            <input
-              type="checkbox"
-              id="checkclose-btn"
-              onClick={toggleButton}
-              //   onKeyDown={(event) => {
-              //     if (event.key === "Enter") {
-              //       event.preventDefault();
-              //       toggleButton();
-              //     }
-              //   }
-              // }
-            />
+            <input type="checkbox" id="checkclose-btn" onClick={toggleButton} />
             <i className="fa-solid fa-xmark"></i>
           </label>
           <div className="navlink-container" style={{ marginTop: "8rem" }}>

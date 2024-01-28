@@ -170,3 +170,38 @@ form {
     gap: 1.5rem;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .contact-container {
+    /* gap: 4rem; */
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas:
+      "heading heading"
+      "form card";
+    & .info-container {
+      grid-area: heading;
+      width: 37rem;
+      h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+    }
+    & form {
+      width: 50rem;
+      grid-area: form;
+      & .container {
+        width: 44rem;
+      }
+    }
+
+    .info-contact {
+      grid-area: card;
+    }
+  }
+}

@@ -17,6 +17,7 @@ export const Footer = () => {
           <li>Github</li>
           <li>React</li>
           <li>Tailwind</li>
+          <li>Html</li>
         </ul>
         <div className="footer-content">
           <div className="footer-top">
