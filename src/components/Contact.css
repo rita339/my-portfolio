@@ -162,3 +162,11 @@ form {
     }
   }
 }
+
+@media screen and (min-width: 960px) {
+  .contact-container {
+    padding: 9rem 10rem 6rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

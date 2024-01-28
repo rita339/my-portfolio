@@ -93,9 +93,6 @@
     opacity: 0.1;
     background-color: var(--base-content);
   }
-  a:hover {
-    color: red;
-  }
   & button {
     display: flex;
     padding: 0.25rem 0.25rem 0.25rem 1.25rem;

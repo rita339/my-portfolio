@@ -5,13 +5,14 @@
   padding-bottom: 5rem;
   flex-direction: column;
   align-items: center;
+  /* margin: auto; */
   gap: 5rem;
   & .sliding-text {
     display: flex;
     justify-content: space-around;
     padding: 1rem 2rem;
     align-items: center;
-    width: 33.75rem;
+    width: 100%;
     gap: 2rem;
     background-color: var(--accent);
     & li {
@@ -180,7 +181,6 @@
     & .sliding-text {
       padding: 1.5rem 2rem;
       gap: 3rem;
-      width: 44rem;
     }
     & .line {
       width: 40rem;
@@ -193,5 +193,23 @@
     & button:hover {
       background-color: var(--accent-focus);
     }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .footer {
+    width: 60rem;
+  }
+  .footer-content {
+    gap: 2.5rem;
+  }
+  .footer-top {
+    gap: 1.25rem;
+  }
+  .container-card {
+    gap: 8.4375rem;
+  }
+  .container-card01 {
+    gap: 7.4375rem;
   }
 }

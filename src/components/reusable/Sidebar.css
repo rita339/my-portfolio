@@ -85,3 +85,17 @@
     text-align: left;
   }
 }
+
+@media screen and (min-width: 960px) {
+  .nav-menu {
+    width: 48.5%;
+    background-color: var(--base-100);
+  }
+  .navlink-container {
+    width: 50%;
+    background-color: var(--base-200);
+    &:hover {
+      background-color: #0909091d;
+    }
+  }
+}

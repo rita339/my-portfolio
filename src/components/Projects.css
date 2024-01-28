@@ -81,3 +81,39 @@
     }
   }
 }
+
+@media screen and (min-width: 960px) {
+  .Projects {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 150px 300px 300px;
+    justify-items: center;
+    grid-template-areas:
+      "heading heading"
+      "card1 card2"
+      "card3 card4";
+  }
+}
+
+.Projects .heading {
+  grid-area: heading;
+  justify-self: center;
+}
+
+.Projects .project-card:nth-child(1) {
+  grid-area: card1;
+  project-content {
+    justify-self: end;
+    border: solid;
+  }
+}
+
+.Projects .project-card:nth-child(2) {
+  grid-area: card2;
+}
+.Projects .project-card:nth-child(3) {
+  grid-area: card3;
+}
+.Projects .project-card:nth-child(4) {
+  grid-area: card4;
+}

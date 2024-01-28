@@ -83,7 +83,7 @@
   .info-contact {
     display: flex;
     width: 19.25rem;
-    /* padding: 1.5rem; */
+    padding: 1.5rem;
     flex-direction: column;
     gap: 1.5rem;
   }

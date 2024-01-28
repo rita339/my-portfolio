@@ -79,3 +79,11 @@
     }
   }
 }
+
+@media screen and (min-width: 960px) {
+  .Skills {
+    .list-content-container {
+      gap: 3.5rem;
+    }
+  }
+}

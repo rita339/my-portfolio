@@ -14,8 +14,9 @@ export const Footer = () => {
         <ul className="sliding-text">
           <li>Bootstrap</li>
           <li>Node.js</li>
-          <li>Git</li>
+          <li>Github</li>
           <li>React</li>
+          <li>Tailwind</li>
         </ul>
         <div className="footer-content">
           <div className="footer-top">
