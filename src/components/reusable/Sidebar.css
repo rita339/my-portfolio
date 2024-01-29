@@ -50,7 +50,7 @@
   text-decoration: none;
   color: var(--base-content);
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 1rem;
   padding: 0.8rem 1.87rem;
@@ -117,6 +117,21 @@
       }
       i {
         font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .nav-menu {
+    width: 18%;
+    & .nav-link {
+      gap: 1rem;
+      p {
+        font-size: 1rem;
+      }
+      i {
+        font-size: 1rem;
       }
     }
   }

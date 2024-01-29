@@ -6,70 +6,67 @@ header {
   padding-top: 2rem;
   display: grid;
   place-items: center;
-}
-.nav-container {
-  background-color: var(--base-100);
-  border-radius: 5rem;
-  border: 1px solid #1313130d;
-  width: 29.75rem;
-  display: flex;
-  align-items: center;
-  padding: 0.75rem 1.5rem;
-  justify-content: space-between;
-  gap: 4rem;
-}
-.img-logo {
-  width: 2.25rem;
-  height: 2.25rem;
-}
-
-.right-menu-container {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.color-fill-btn {
-  border-radius: 3.125rem;
-  background-color: var(--base-100);
-  padding: 0.5rem;
-  border: none;
-}
-#checkbox {
-  display: none;
-}
-
-.burger-icon {
-  img {
-    width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer;
-    opacity: 0.6;
+  background-color: var(--base-200);
+  .nav-container {
+    background-color: var(--base-100);
+    border-radius: 5rem;
+    border: 1px solid #1313130d;
+    width: 29.75rem;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    justify-content: space-between;
+    gap: 4rem;
+    .img-logo {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
   }
+  & .right-menu-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    & .color-fill-btn {
+      border-radius: 3.125rem;
+      background-color: var(--base-100);
+      padding: 0.5rem;
+      border: none;
+    }
+    & #checkbox {
+      display: none;
+    }
 
-  &:hover img {
-    opacity: 1;
+    & .burger-icon {
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        opacity: 0.6;
+      }
+
+      &:hover img {
+        opacity: 1;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 704px) {
   header {
-    width: 100%;
-  }
-  .nav-container {
-    width: 40rem;
+    & .nav-container {
+      width: 40rem;
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .nav-container {
-    width: 76rem;
-    padding: 1rem 1rem 1rem 2rem;
-  }
-  .img-logo img {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  .right-menu-container {
-    padding-right: 1rem;
+  header {
+    & .nav-container {
+      width: 76rem;
+      padding: 1rem 1rem 1rem 2rem;
+      & .right-menu-container {
+        padding-right: 1rem;
+      }
+    }
   }
 }
