@@ -183,3 +183,9 @@
     }
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .Resume {
+    padding-top: 10rem;
+  }
+}

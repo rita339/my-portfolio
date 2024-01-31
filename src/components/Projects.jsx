@@ -4,15 +4,15 @@ import Frame from "../images/Frame.png";
 export const Projects = () => {
   return (
     <section className="Projects">
-      <div className="heading">
+      <article className="heading">
         <h1>Latest Projects</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quidem
           autem! Eos fugiat alias labore.
         </p>
-      </div>
+      </article>
       {/* Card-01 */}
-      <div className="project-card">
+      <article className="project-card">
         <div className="project-content">
           <div className="project-frame">
             <img src={Frame} alt="Frame" />
@@ -26,9 +26,9 @@ export const Projects = () => {
             </p>
           </div>
         </div>
-      </div>
+      </article>
       {/* Card-02 */}
-      <div className="project-card">
+      <article className="project-card">
         <div className="project-content">
           <div className="project-frame">
             <img src={Frame} alt="Frame" />
@@ -42,9 +42,9 @@ export const Projects = () => {
             </p>
           </div>
         </div>
-      </div>
+      </article>
       {/* Card-03 */}
-      <div className="project-card">
+      <article className="project-card">
         <div className="project-content">
           <div className="project-frame">
             <img src={Frame} alt="Frame" />
@@ -58,9 +58,9 @@ export const Projects = () => {
             </p>
           </div>
         </div>
-      </div>
+      </article>
       {/* Card-04 */}
-      <div className="project-card">
+      <article className="project-card">
         <div className="project-content">
           <div className="project-frame">
             <img src={Frame} alt="Frame" />
@@ -74,7 +74,7 @@ export const Projects = () => {
             </p>
           </div>
         </div>
-      </div>
+      </article>
     </section>
   );
 };

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --primary: #f78f42;
   --primary-focus: #ffd0a2;
@@ -15,4 +20,15 @@
   --base-200: #f6f6f7;
   --base-300: #e8e8ea;
   --base-content: #181a2a;
+}
+
+body {
+  background-color: var(--base-200);
+  font-family: Inter;
+  color: var(--base-content);
+  /* overflow-x: hidden; */
+}
+
+main {
+  max-width: 80%;
 }

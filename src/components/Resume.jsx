@@ -4,15 +4,15 @@ import CV from "./assets/Resume.pdf";
 export const Resume = () => {
   return (
     <section className="Resume">
-      <div className="heading-resume">
+      <article className="heading-resume">
         <h1>My Résumé</h1>
         <p>
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. lorem ipsum
         </p>
-      </div>
+      </article>
 
-      <div className="content-resume">
+      <article className="content-resume">
         <div className="card-resume">
           <div className="item-resume">
             <div className="item-heading">
@@ -82,7 +82,7 @@ export const Resume = () => {
             </button>
           </a>
         </div>
-      </div>
+      </article>
     </section>
   );
 };
