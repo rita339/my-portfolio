@@ -15,13 +15,11 @@ export const Footer = () => {
       <section className="footer-content">
         <article className="footer-top">
           <h1>Let's Work Together</h1>
-          <NavLink to="/projects">
-            <button>
-              Get Started
-              <div className="icon-btn">
-                <i className="fa-solid fa-arrow-right-long"></i>
-              </div>
-            </button>
+          <NavLink to="/projects" className="footer-btn">
+            Get Started
+            <div className="icon-btn">
+              <i className="fa-solid fa-arrow-right-long"></i>
+            </div>
           </NavLink>
         </article>
 
@@ -61,14 +59,14 @@ export const Footer = () => {
             <NavLink className="navlink" to="/">
               Home
             </NavLink>
-            <NavLink className="navlink" to="/about">
-              About
+            <NavLink className="navlink" to="/resume">
+              Résumé
+            </NavLink>
+            <NavLink className="navlink" to="/skills">
+              Skills
             </NavLink>
             <NavLink className="navlink" to="/projects">
               Projects
-            </NavLink>
-            <NavLink className="navlink" to="/resume">
-              Résumé
             </NavLink>
             <NavLink className="navlink" to="/contact">
               Contact

@@ -93,11 +93,12 @@
     opacity: 0.1;
     background-color: var(--base-content);
   }
-  & button {
+  & .btn-container {
     display: flex;
     padding: 0.25rem 0.25rem 0.25rem 1.25rem;
     justify-content: center;
     align-items: center;
+    color: var(--base-content);
     gap: 1rem;
     font-family: Inter;
     font-size: 1rem;
@@ -153,7 +154,7 @@
     & .divider-resume {
       width: 37rem;
     }
-    & button:hover {
+    & .btn-container:hover {
       background-color: var(--accent-focus);
     }
   }
@@ -178,7 +179,7 @@
       width: 56rem;
       padding: 2.5rem;
     }
-    & button {
+    & .btn-container {
       margin-top: 2rem;
     }
   }

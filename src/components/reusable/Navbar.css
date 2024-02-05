@@ -1,25 +1,28 @@
 header {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
+  left: 0;
+  z-index: 3;
   padding-top: 2rem;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 7rem;
-  background-color: var(--base-200);
+  background-color: blueviolet;
+  /* background-color: var(--base-200); */
   .nav-container {
     background-color: var(--base-100);
-    position: fixed;
-    top: 2rem;
+    /* position: fixed;
+    top: 2rem; */
     border-radius: 5rem;
     border: 1px solid #1313130d;
-    width: 29.75rem;
+    width: 95%;
     display: flex;
     align-items: center;
     padding: 0.75rem 1.5rem;
     justify-content: space-between;
-    gap: 4rem;
+    /* gap: 4rem; */
     .img-logo {
       width: 2.25rem;
       height: 2.25rem;
@@ -57,19 +60,33 @@ header {
 @media screen and (min-width: 704px) {
   header {
     & .nav-container {
-      width: 40rem;
+      width: 90%;
     }
   }
 }
-
+@media screen and (min-width: 960px) {
+  header {
+    .nav-container {
+      width: 70%;
+    }
+  }
+}
 @media screen and (min-width: 1280px) {
   header {
     & .nav-container {
-      width: 76rem;
+      width: 90%;
       padding: 1rem 1rem 1rem 2rem;
       & .right-menu-container {
         padding-right: 1rem;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    & .nav-container {
+      width: 60%;
     }
   }
 }

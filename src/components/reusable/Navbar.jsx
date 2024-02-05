@@ -20,9 +20,12 @@ export const Navbar = () => {
           <img src={Logoimage} alt="logo-image" />
         </NavLink>
         <article className="right-menu-container">
-          <button className="color-fill-btn">
-            <img src={colorfillImage} alt="color-fill" />
-          </button>
+          <img
+            src={colorfillImage}
+            alt="color-fill"
+            className="color-fill-btn"
+          />
+
           <label className="burger-icon">
             <input type="checkbox" id="checkbox" onClick={toggleButton} />
             <img src={Menu} alt="burger-menu-icon" />

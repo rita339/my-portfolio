@@ -73,13 +73,11 @@ export const Resume = () => {
           </div>
           <div className="divider-resume"></div>
 
-          <a href={CV} download rel="noreferrer">
-            <button>
-              Résumé
-              <div className="btn-resume">
-                <i className="fa-solid fa-download"></i>
-              </div>
-            </button>
+          <a href={CV} download rel="noreferrer" className="btn-container">
+            Résumé
+            <div className="btn-resume">
+              <i className="fa-solid fa-download"></i>
+            </div>
           </a>
         </div>
       </article>

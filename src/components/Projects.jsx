@@ -1,7 +1,12 @@
 import "./Projects.css";
 import Frame from "../images/Frame.png";
+import { useEffect } from "react";
 
 export const Projects = () => {
+  // scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="Projects">
       <article className="heading">
