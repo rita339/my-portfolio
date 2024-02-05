@@ -19,15 +19,18 @@ export const Navbar = () => {
         <NavLink to="/" className="img-logo">
           <img src={Logoimage} alt="logo-image" />
         </NavLink>
-        <div className="right-menu-container">
-          <button className="color-fill-btn">
-            <img src={colorfillImage} alt="color-fill" />
-          </button>
+        <article className="right-menu-container">
+          <img
+            src={colorfillImage}
+            alt="color-fill"
+            className="color-fill-btn"
+          />
+
           <label className="burger-icon">
             <input type="checkbox" id="checkbox" onClick={toggleButton} />
             <img src={Menu} alt="burger-menu-icon" />
           </label>
-        </div>
+        </article>
         <Sidebar isActive={isActive} toggleButton={toggleButton} />
       </nav>
     </header>

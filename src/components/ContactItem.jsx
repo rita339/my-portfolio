@@ -7,7 +7,7 @@ export const ContactItem = () => {
   const phoneNumber = "+49 (176) 287 229 56";
 
   return (
-    <>
+    <div className="info-contact">
       <div className="card-container">
         <div className="map">
           <img src={map} alt="map" />
@@ -26,7 +26,7 @@ export const ContactItem = () => {
           </div>
         </div>
       </div>
-
+      <div className="contact-divider"></div>
       <div className="card-container">
         <div className="envelop">
           <i className="fa-solid fa-envelope"></i>
@@ -42,6 +42,7 @@ export const ContactItem = () => {
           </div>
         </div>
       </div>
+      <div className="contact-divider"></div>
 
       <div className="card-container">
         <div className="phone">
@@ -56,15 +57,6 @@ export const ContactItem = () => {
           </div>
         </div>
       </div>
-
-      {/* <ul className="slide">
-        <li>React</li>
-        <li>JavaScript</li>
-        <li>HTML / CSS</li>
-        <li>Node.js</li>
-        <li>Git</li>
-        <li>MongoDB</li>
-      </ul> */}
-    </>
+    </div>
   );
 };

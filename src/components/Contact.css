@@ -5,11 +5,14 @@
   /* width: 33.75rem; */
   gap: 3rem;
   background-color: var(--base-100);
-  margin: 8rem auto 0;
-  padding: 4rem 1rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
 }
 
 .info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   width: 29.75rem;
   & h1 {
     text-align: center;
@@ -20,7 +23,6 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     opacity: 0.6;
-    padding: 0.75rem 1.25rem;
   }
 }
 
@@ -31,15 +33,18 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.625rem;
   /* padding: 1.5rem; */
-  & h2 {
-    font-weight: 500;
-  }
+
   & .container {
     width: 26.75rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    & h2 {
+      font-weight: 500;
+      line-height: 2rem;
+    }
   }
   & .form-group {
     display: flex;
@@ -47,6 +52,8 @@ form {
     gap: 0.5rem;
     & label {
       opacity: 0.8;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
     }
   }
 }
@@ -116,5 +123,85 @@ form {
     color: var(--accent);
     font-size: 1.8rem;
     margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 704px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding-bottom: 6rem;
+    padding-top: 9rem;
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      gap: 1rem;
+      h1 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+    form {
+      width: 19.25rem;
+      padding: 1.5rem;
+    }
+    .container {
+      width: 19.25rem;
+    }
+    & button:hover {
+      background-color: var(--accent-focus);
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .contact-container {
+    padding: 9rem 10rem 6rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact-container {
+    /* gap: 4rem; */
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas:
+      "heading heading"
+      "form card";
+    & .info-container {
+      grid-area: heading;
+      width: 37rem;
+      h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+    }
+    & form {
+      width: 50rem;
+      grid-area: form;
+      & .container {
+        width: 44rem;
+      }
+    }
+
+    .info-contact {
+      grid-area: card;
+    }
   }
 }

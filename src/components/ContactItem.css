@@ -3,6 +3,7 @@
   border-radius: 0.75rem;
   display: flex;
   padding: 1.5rem;
+  width: 29.75rem;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
@@ -36,6 +37,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    p {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
   }
   & .card-02 {
     display: flex;
@@ -43,12 +48,23 @@
     gap: 0.75rem;
     opacity: 0.6;
     text-align: right;
+    & p {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
     & a {
       color: var(--base-content);
+      font-size: 0.875rem;
+      line-height: 1.25rem;
     }
   }
 }
-
+.contact-divider {
+  height: 0.0625rem;
+  opacity: 0.1;
+  background-color: #131313;
+  margin: auto;
+}
 .slide {
   width: 33.75rem;
   height: 3.75rem;
@@ -60,5 +76,30 @@
   & li {
     font-size: 1.125rem;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 704px) {
+  .info-contact {
+    display: flex;
+    width: 19.25rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .card-container {
+    width: 19.25rem;
+  }
+  .card-group {
+    width: 19.25rem;
+    padding-right: 0.125rem;
+  }
+  .contact-divider {
+    width: 16.25rem;
+    height: 0.0625rem;
+    opacity: 0.1;
+    background: #131313;
+    display: flex;
+    justify-content: center;
   }
 }

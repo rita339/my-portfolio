@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary: #f78f42;
   --primary-focus: #ffd0a2;
@@ -15,4 +21,45 @@
   --base-200: #f6f6f7;
   --base-300: #e8e8ea;
   --base-content: #181a2a;
+}
+
+body {
+  background-color: var(--base-200);
+  font-family: "Inter", sans-serif;
+  color: var(--base-content);
+  height: 100vh;
+}
+
+main {
+  max-width: 90%;
+  margin: 10rem auto 5rem auto;
+  border: solid;
+}
+
+@media screen and (min-width: 704px) {
+  main {
+    max-width: 85%;
+    margin: 11rem auto 6rem auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  main {
+    max-width: 80%;
+    margin: 11rem auto 6rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    max-width: 100%;
+    margin: 16rem auto 12rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  main {
+    max-width: 70%;
+    margin: 18rem auto 14rem;
+  }
 }

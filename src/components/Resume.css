@@ -4,8 +4,8 @@
   align-items: center;
   gap: 2rem;
   /* width: 29.75rem; */
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
   & .heading-resume {
     width: 29.75rem;
     display: flex;
@@ -93,14 +93,12 @@
     opacity: 0.1;
     background-color: var(--base-content);
   }
-  a:hover {
-    color: red;
-  }
-  & button {
+  & .btn-container {
     display: flex;
     padding: 0.25rem 0.25rem 0.25rem 1.25rem;
     justify-content: center;
     align-items: center;
+    color: var(--base-content);
     gap: 1rem;
     font-family: Inter;
     font-size: 1rem;
@@ -125,5 +123,70 @@
         justify-content: center;
       }
     }
+  }
+}
+
+@media screen and (min-width: 704px) {
+  .Resume {
+    gap: 3rem;
+    & .heading-resume {
+      h1 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      p {
+        width: 27.375rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+    & .content-resume {
+      width: 40rem;
+    }
+    & .card-resume {
+      width: 37rem;
+    }
+    & .item-resume {
+      width: 37rem;
+      display: flex;
+      flex-direction: row;
+    }
+    & .divider-resume {
+      width: 37rem;
+    }
+    & .btn-container:hover {
+      background-color: var(--accent-focus);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .Resume {
+    padding-bottom: 8rem;
+    gap: 4rem;
+    & .heading-resume {
+      h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+      p {
+        width: 37rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+    }
+    & .content-resume {
+      width: 56rem;
+      padding: 2.5rem;
+    }
+    & .btn-container {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Resume {
+    padding-top: 10rem;
   }
 }

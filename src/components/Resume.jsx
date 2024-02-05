@@ -4,15 +4,15 @@ import CV from "./assets/Resume.pdf";
 export const Resume = () => {
   return (
     <section className="Resume">
-      <div className="heading-resume">
+      <article className="heading-resume">
         <h1>My Résumé</h1>
         <p>
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. lorem ipsum
         </p>
-      </div>
+      </article>
 
-      <div className="content-resume">
+      <article className="content-resume">
         <div className="card-resume">
           <div className="item-resume">
             <div className="item-heading">
@@ -30,9 +30,9 @@ export const Resume = () => {
                 Pulvinar quisque sed amet, nulla nunc.
               </p>
             </div>
-
-            <div className="divider-resume"></div>
           </div>
+
+          <div className="divider-resume"></div>
           {/* Item ---- 02 */}
           <div className="item-resume">
             <div className="item-heading">
@@ -50,9 +50,9 @@ export const Resume = () => {
                 Pulvinar quisque sed amet, nulla nunc.
               </p>
             </div>
-
-            <div className="divider-resume"></div>
           </div>
+          <div className="divider-resume"></div>
+
           {/* Item ----- 03 */}
           <div className="item-resume">
             <div className="item-heading">
@@ -70,19 +70,17 @@ export const Resume = () => {
                 Pulvinar quisque sed amet, nulla nunc.
               </p>
             </div>
-
-            <div className="divider-resume"></div>
           </div>
-          <a href={CV} download rel="noreferrer">
-            <button>
-              Résumé
-              <div className="btn-resume">
-                <i className="fa-solid fa-download"></i>
-              </div>
-            </button>
+          <div className="divider-resume"></div>
+
+          <a href={CV} download rel="noreferrer" className="btn-container">
+            Résumé
+            <div className="btn-resume">
+              <i className="fa-solid fa-download"></i>
+            </div>
           </a>
         </div>
-      </div>
+      </article>
     </section>
   );
 };
