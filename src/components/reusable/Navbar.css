@@ -1,0 +1,65 @@
+.Navbar {
+  height: 7rem;
+  background-color: var(--base-200);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  & .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--base-100);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5rem;
+    border: 1px solid #1313130d;
+    margin: 2rem auto;
+    width: 95%;
+    & :nth-child(2) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  & ul {
+    background-color: var(--base-200);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Navbar {
+    & .navbar-container {
+      width: 80%;
+    }
+    & ul {
+      width: 48.5%;
+      background-color: var(--base-100);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Navbar {
+    & .navbar-container {
+      width: 95%;
+    }
+    & ul {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Navbar {
+    & .navbar-container {
+      width: 65%;
+    }
+    & ul {
+      width: 25%;
+    }
+  }
+}
