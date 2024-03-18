@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Sidebar } from "./Sidebar.jsx";
 import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   const [isActive, setIsActive] = useState("");
+  useEffect(() => {}, [isActive]);
 
   return (
     <nav className="Navbar">

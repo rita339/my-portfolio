@@ -9,10 +9,6 @@ export const Footer = () => {
   const emailAdress = "iuliia.erbis@gmail.com";
   const telegramUsername = "@UserjuliaErb";
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <footer className="Footer">
       <Slidingtext />

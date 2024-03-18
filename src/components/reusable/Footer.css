@@ -101,6 +101,9 @@
         }
         & .fa-github {
           color: var(--accent);
+          &:hover {
+            color: var(--accent-focus);
+          }
         }
       }
     }
@@ -213,13 +216,13 @@
 @media screen and (min-width: 1200px) {
   .Footer {
     & .footer-content {
-      width: 100%;
+      width: 70%;
       & .contact-content-container {
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
         & .contact-wrapper {
-          width: 40%;
+          width: 45%;
         }
       }
     }

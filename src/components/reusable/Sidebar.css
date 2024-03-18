@@ -2,10 +2,11 @@
   font-size: 2rem;
   position: absolute;
   z-index: 10;
-  left: 15rem;
+  left: 18rem;
   top: 2.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: var(--accent);
   cursor: pointer;
   &:hover {

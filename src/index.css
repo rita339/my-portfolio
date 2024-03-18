@@ -25,3 +25,33 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--base-content);
 }
+
+main {
+  margin: 2rem auto 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  section {
+    width: 65%;
+  }
+}

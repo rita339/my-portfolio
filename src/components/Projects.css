@@ -1,0 +1,133 @@
+.Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  & .heading {
+    display: flex;
+    width: 29.75rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    & h1 {
+      line-height: 2;
+    }
+    & p {
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1.25;
+      opacity: 0.6;
+    }
+  }
+  .project-card {
+    display: flex;
+    width: 29.75rem;
+    padding: 2rem;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    border: 1px solid var(--accent);
+    background-color: var(--base-100);
+    & .project-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+      & .project-frame {
+        display: flex;
+        padding: 1rem;
+        gap: 0.625rem;
+        border-radius: 0.75rem;
+        background-color: var(--accent);
+      }
+    }
+    & .project-text h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      line-height: 2;
+    }
+    & .project-text p {
+      font-size: 1rem;
+      line-height: 1.5;
+      opacity: 0.6;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    .heading {
+      h1 {
+        font-size: 1.875rem;
+        line-height: 2.25;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 1rem;
+      }
+    }
+    .project-card {
+      width: 19.25rem;
+      padding: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Projects {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 150px 300px 300px;
+    justify-items: center;
+    grid-template-areas:
+      "heading heading"
+      "card1 card2"
+      "card3 card4";
+  }
+}
+
+.Projects .heading {
+  grid-area: heading;
+  justify-self: center;
+}
+
+.Projects .project-card:nth-child(1) {
+  grid-area: card1;
+}
+
+.Projects .project-card:nth-child(2) {
+  grid-area: card2;
+}
+.Projects .project-card:nth-child(3) {
+  grid-area: card3;
+}
+.Projects .project-card:nth-child(4) {
+  grid-area: card4;
+}
+
+@media screen and (min-width: 1200px) {
+  .Projects {
+    padding-bottom: 5rem;
+    gap: 4rem;
+    grid-template-columns: 400px 400px;
+    & .heading {
+      width: 70%;
+      h1 {
+        font-size: 3rem;
+        line-height: 3.5;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 1.75;
+      }
+    }
+    & .project-card {
+      width: 24rem;
+    }
+  }
+}

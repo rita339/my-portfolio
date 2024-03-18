@@ -1,0 +1,130 @@
+.Home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  & .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    & .info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      & h1 {
+        color: var(--base-content);
+        line-height: 3;
+        font-size: 2.5rem;
+      }
+      & .border {
+        border-top: 2px solid var(--accent);
+        width: 8rem;
+        height: 1px;
+      }
+      & p {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: var(--base-content);
+      }
+    }
+    & .socialmedia-container {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.75rem 1.25rem;
+      background-color: var(--base-100);
+      border-radius: 0.5rem;
+      cursor: pointer;
+      & a:not(:nth-child(2)) {
+        color: var(--base-content);
+        opacity: 0.5;
+        &:hover {
+          color: var(--secondary-focus);
+        }
+      }
+      & i {
+        width: 1rem;
+        height: 1rem;
+      }
+      & .fa-github {
+        color: var(--accent);
+        &:hover {
+          color: var(--accent-focus);
+        }
+      }
+    }
+  }
+
+  & .description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    & h2 {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      font-weight: 500;
+      color: var(--base-content);
+    }
+    & p {
+      color: var(--base-content);
+      font-size: 1rem;
+      opacity: 0.6;
+      line-height: 1.75;
+    }
+    & .contact-link {
+      display: flex;
+      padding: 0.25rem 0.25rem 0.25rem 1.25rem;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      color: var(--base-content);
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 1.5;
+      border-radius: 3.5rem;
+      background-color: var(--accent);
+      cursor: pointer;
+      width: 10rem;
+      & .icon-btn {
+        display: flex;
+        border: none;
+        padding: 0.625rem;
+        align-items: center;
+        gap: 0.625rem;
+        border-radius: 2.5rem;
+        background-color: var(--base-content);
+        & i {
+          font-size: 1.25rem;
+          color: var(--accent);
+        }
+        &:hover {
+          background-color: var(--accent-focus);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Home {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Home {
+    flex-wrap: nowrap;
+    width: 70%;
+    padding: 8rem 1.5rem;
+    & .description {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Home {
+    width: 65%;
+  }
+}
