@@ -81,7 +81,7 @@ export const Footer = () => {
           {/*Contact & Address Bereich  */}
 
           <div className="contact-wrapper">
-            <div className="contact-container">
+            <div className="contact-footer-container">
               <div className="contact-header">
                 <p>CONTACT</p>
                 <div className="footer-line"></div>
@@ -102,7 +102,7 @@ export const Footer = () => {
               </div>
             </div>
 
-            <div className="contact-container">
+            <div className="contact-adress-container">
               <div className="contact-header">
                 <p>ADDRESS</p>
                 <div className="footer-line"></div>
