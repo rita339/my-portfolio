@@ -117,6 +117,9 @@
     flex-wrap: nowrap;
     width: 70%;
     padding: 8rem 1.5rem;
+    & .user-info {
+      justify-content: space-between;
+    }
     & .description {
       width: 35%;
     }

@@ -1,7 +1,12 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
+import { useEffect } from "react";
 
 export const Home = () => {
+  // scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="Home">
       <div className="user-info">
@@ -38,10 +43,12 @@ export const Home = () => {
       <div className="description">
         <h2>I am a Web Developer</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-          laudantium nam maiores doloremque, adipisci quas aliquid autem aperiam
-          laboriosam ab similique. Aut nam exercitationem alias itaque officiis
-          consequatur cumque inventore?
+          After a break, I feel ready to reactivate the technical skills I
+          acquired during my studies, especially in the field of Applied
+          Linguistics, again. At the DCI I am full of motivation to tackle the
+          final spurt of my training programme. It fills me with joy soon to be
+          able to demonstrate my skills as a web developer and to keep on
+          learning.
         </p>
         <Link to="/contact" className="contact-link">
           Let's Talk

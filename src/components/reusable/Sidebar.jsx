@@ -1,7 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
+import { useEffect } from "react";
 
 export const Sidebar = ({ isActive, setIsActive }) => {
+  // scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="sidebar-wrapper">
       <i
@@ -72,16 +77,16 @@ export const Sidebar = ({ isActive, setIsActive }) => {
       </div>
       {/* Social Icons */}
       <div className="social-icons">
-        <a href="#">
+        <a href="https://www.linkedin.com/in/julia-e-07bab42a4/">
           <i className="fa-brands fa-linkedin"></i>
         </a>
-        <a href="#">
+        <a href="https://github.com/rita339">
           <i className="fa-brands fa-github"></i>
         </a>
         <a href="https://www.instagram.com/">
           <i className="fa-brands fa-instagram"></i>
         </a>
-        <a href="#">
+        <a href="https://www.xing.com/?gad_source=1">
           <i className="fa-brands fa-xing"></i>
         </a>
       </div>

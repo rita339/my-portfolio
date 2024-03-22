@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  /* width: 29.75rem; */
   & .heading-resume {
     width: 29.75rem;
     display: flex;
@@ -45,7 +44,6 @@
   }
   & .item-heading {
     display: flex;
-    /* width: 12.1875rem; */
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
@@ -140,18 +138,19 @@
       }
     }
     & .content-resume {
-      width: 40rem;
+      width: 45rem;
     }
     & .card-resume {
-      width: 37rem;
+      width: 42rem;
     }
     & .item-resume {
-      width: 37rem;
+      width: 42rem;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
     }
     & .divider-resume {
-      width: 37rem;
+      width: 42rem;
     }
     & .btn-container:hover {
       background-color: var(--accent-focus);
@@ -164,7 +163,7 @@
     padding-bottom: 5rem;
     gap: 4rem;
     & .heading-resume {
-      width: 70%;
+      width: 50%;
       h1 {
         font-size: 3rem;
         line-height: 3.5;
@@ -175,9 +174,13 @@
       }
     }
     & .content-resume {
-      width: 70%;
+      width: 60%;
       padding: 2.5rem;
+      & .card-resume {
+        margin: 0 auto;
+      }
     }
+
     & .btn-container {
       margin-top: 2rem;
     }

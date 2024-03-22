@@ -6,8 +6,10 @@ export const Resume = () => {
       <article className="heading-resume">
         <h1>My Résumé</h1>
         <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+          Welcome to my professional journey captured in this résumé. Here,
+          you'll find a comprehensive overview of my skills and experiences. I
+          invite you to explore my career highlights and qualifications as you
+          consider the value I can bring to your team or project.
         </p>
       </article>
 
@@ -73,7 +75,7 @@ export const Resume = () => {
           <div className="divider-resume"></div>
 
           <a
-            href="./Resume"
+            href="Resume.pdf"
             download
             rel="noreferrer"
             className="btn-container"

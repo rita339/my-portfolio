@@ -1,7 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Footer.css";
 import { Slidingtext } from "./Slidingtext.jsx";
-import { useEffect } from "react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -29,25 +28,29 @@ export const Footer = () => {
           <div className="contact-wrapper">
             <div className="social-container">
               <div className="social-header">
-                <img src="./Logo.png" alt="Logo Bild" />
+                <Link>
+                  <img src="./Logo.png" alt="Logo Bild" />
+                </Link>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Consectetur dolorum. Lorem ipsum dolor sit amet consectetur,
-                  adipisicing elit.
+                  <p>
+                    Welcome to my digital home! Here, I share my passion for web
+                    development. Let's connect to discuss my skills and
+                    experiences. Feel free to reach out to me.
+                  </p>
                 </p>
               </div>
 
               <div className="social-links">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/julia-e-07bab42a4/">
                   <i className="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#">
+                <a href="https://github.com/rita339">
                   <i className="fa-brands fa-github"></i>
                 </a>
                 <a href="https://www.instagram.com/">
                   <i className="fa-brands fa-instagram"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.xing.com/?gad_source=1">
                   <i className="fa-brands fa-xing"></i>
                 </a>
               </div>
