@@ -19,16 +19,17 @@ export const Resume = () => {
             <div className="item-heading">
               <h2>DCI Digital Career Institute</h2>
               <div className="badge-resume">
-                <p>März 2023 - Mai 2024</p>
+                <p>March 2023 - May 2024</p>
               </div>
             </div>
 
             <div className="info-resume">
               <h3>Certificate of web developing</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                dapibus nibh ut faucibus nunc, egestas id amet porttitor.
-                Pulvinar quisque sed amet, nulla nunc.
+                During my time at DCI Digital Career Institute, I immersed
+                myself in web development, acquiring essential skills and
+                knowledge in this field. Equipped with these skills, I am able
+                to contribute effectively to web projects.
               </p>
             </div>
           </div>
@@ -37,18 +38,19 @@ export const Resume = () => {
           {/* Item ---- 02 */}
           <div className="item-resume">
             <div className="item-heading">
-              <h2>DCI Digital Career Institute</h2>
+              <h2>Cologne University</h2>
               <div className="badge-resume">
-                <p>März 2023 - Mai 2024</p>
+                <p>October 2012 - March 2018</p>
               </div>
             </div>
 
             <div className="info-resume">
-              <h3>Certificate of web developing</h3>
+              <h3>B.Sc. Health Economics</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                dapibus nibh ut faucibus nunc, egestas id amet porttitor.
-                Pulvinar quisque sed amet, nulla nunc.
+                At Cologne University, I completed my Bachelor's degree in
+                Health Economics. This study not only provided me with a sound
+                understanding of the economic aspects of healthcare, but also
+                strengthened my analytical and problem-solving skills.
               </p>
             </div>
           </div>
@@ -57,18 +59,17 @@ export const Resume = () => {
           {/* Item ----- 03 */}
           <div className="item-resume">
             <div className="item-heading">
-              <h2>DCI Digital Career Institute</h2>
+              <h2>Lviv Polytechnic University </h2>
               <div className="badge-resume">
-                <p>März 2023 - Mai 2024</p>
+                <p>September 2004 - December 2009</p>
               </div>
             </div>
 
             <div className="info-resume">
-              <h3>Certificate of web developing</h3>
+              <h3>Dipl. Applied Linguistics</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                dapibus nibh ut faucibus nunc, egestas id amet porttitor.
-                Pulvinar quisque sed amet, nulla nunc.
+                Driven by my passion for languages, I began my studies in
+                Applied Linguistics at Lviv Polytechnic University in 2004.
               </p>
             </div>
           </div>
