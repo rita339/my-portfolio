@@ -88,12 +88,12 @@
     gap: 4rem;
     padding-bottom: 5rem;
     & .heading-skills {
+      width: 50%;
       h1 {
         font-size: 3rem;
         line-height: 3.5;
       }
       p {
-        width: 37rem;
         font-size: 1.125rem;
         line-height: 1.75;
       }

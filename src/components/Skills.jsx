@@ -6,8 +6,10 @@ export const Skills = () => {
       <article className="heading-skills">
         <h1>My Skills</h1>
         <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+          Welcome to my skills section, where I showcase the diverse range of
+          abilities I have acquired throughout my digital journey. Explore below
+          to learn more about my expertise and how it can benefit your
+          endeavors.
         </p>
       </article>
 

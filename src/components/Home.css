@@ -115,7 +115,7 @@
 @media screen and (min-width: 1200px) {
   .Home {
     flex-wrap: nowrap;
-    width: 70%;
+    width: 80%;
     padding: 8rem 1.5rem;
     & .user-info {
       justify-content: space-between;

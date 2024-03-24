@@ -88,7 +88,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact-container">
+    <section className="Contact">
       {emailSend ? (
         <p className="answer">
           <i className="fa-solid fa-circle-check"></i>
@@ -99,13 +99,15 @@ export const Contact = () => {
           <div className="info-container">
             <h1>Get In Touch</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              reprehenderit at minus. Architecto quisquam at deleniti!
+              Have questions or want to discuss a project? Feel free to reach
+              out to me using the form below, via email or just call me. I'm
+              always eager to connect and explore new opportunities for
+              collaboration.
             </p>
           </div>
 
-          <form onSubmit={sendHandler}>
-            <div className="container">
+          <div className="contact-wrapper">
+            <form onSubmit={sendHandler}>
               <h2>Leave a Message</h2>
               <div className="form-group">
                 <label htmlFor="name">Name* </label>
@@ -117,7 +119,7 @@ export const Contact = () => {
                   onChange={nameHandler}
                 />
               </div>
-              <div className={`form-group ${!isEmailValid ? "invalid" : ""}`}>
+              <div className="form-group">
                 <label htmlFor="email">Email*</label>
                 <input
                   type="email"
@@ -145,9 +147,9 @@ export const Contact = () => {
                   </div>
                 </button>
               </div>
-            </div>
-          </form>
-          <ContactItem />
+            </form>
+            <ContactItem />
+          </div>
         </>
       )}
     </section>

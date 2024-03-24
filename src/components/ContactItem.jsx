@@ -6,10 +6,12 @@ export const ContactItem = () => {
   const phoneNumber = "+49 (176) 287 229 56";
 
   return (
-    <div className="info-contact">
+    <div className="SectionContact">
       <div className="card-container">
-        <div className="map">
-          <img src="./location.png" alt="map" />
+        <div className="wrapper">
+          <div className="icon-container">
+            <i className="fa-solid fa-map"></i>
+          </div>
         </div>
 
         <div className="card-group">
@@ -27,9 +29,12 @@ export const ContactItem = () => {
       </div>
       <div className="contact-divider"></div>
       <div className="card-container">
-        <div className="envelop">
-          <i className="fa-solid fa-envelope"></i>
+        <div className="wrapper">
+          <div className="icon-container">
+            <i className="fa-solid fa-envelope"></i>
+          </div>
         </div>
+
         <div className="card-group">
           <div className="card-01">
             <p>Email:</p>
@@ -44,9 +49,12 @@ export const ContactItem = () => {
       <div className="contact-divider"></div>
 
       <div className="card-container">
-        <div className="phone">
-          <i className="fa-solid fa-mobile"></i>
+        <div className="wrapper">
+          <div className="icon-container">
+            <i className="fa-solid fa-mobile"></i>
+          </div>
         </div>
+
         <div className="card-group">
           <div className="card-01">
             <p>Mobile:</p>

@@ -213,13 +213,18 @@
 @media screen and (min-width: 1200px) {
   .Footer {
     & .footer-content {
-      width: 70%;
+      width: 80%;
       & .contact-content-container {
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
         & .contact-wrapper {
           width: 45%;
+          & .social-header {
+            p {
+              width: 12rem;
+            }
+          }
         }
       }
     }
