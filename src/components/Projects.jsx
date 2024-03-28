@@ -23,13 +23,17 @@ export const Projects = () => {
             <img src="./Frame.png" alt="Frame" />
           </div>
 
-          <div className="project-text">
-            <h2>Web Development</h2>
+          <a
+            href="https://trellomania-frontend.onrender.com/"
+            className="project-text"
+            target="_blank"
+          >
+            <h2>TrelloMania</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Blanditiis quae ipsa soluta itaque. In, debitis!
+              As part of training to become a full stack web developer, we have
+              build a Trello-like application in the MERN stack.
             </p>
-          </div>
+          </a>
         </div>
       </div>
       {/* Card-02 */}
@@ -39,13 +43,14 @@ export const Projects = () => {
             <img src="./Frame.png" alt="Frame" />
           </div>
 
-          <div className="project-text">
-            <h2>Web Development</h2>
+          <a href="#" className="project-text" target="_blank">
+            <h2>UBL Project</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Blanditiis quae ipsa soluta itaque. In, debitis!
+              The UBL Project is an initiative by the Independent Citizens'
+              List, focusing on promoting citizen participation in local
+              communities.
             </p>
-          </div>
+          </a>
         </div>
       </div>
     </section>

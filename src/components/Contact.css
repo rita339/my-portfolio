@@ -57,6 +57,7 @@
 
       #message {
         text-indent: 0.625rem;
+        padding-top: 0.75rem;
       }
       & .submit-btn {
         & button {
@@ -94,6 +95,7 @@
 }
 
 & .answer {
+  margin: 0 auto;
   font-size: 2rem;
   font-weight: 500;
   text-align: end;

@@ -13,7 +13,7 @@ export const Home = () => {
         <div className="info">
           <h1>Julia Erbis</h1>
           <div className="border"></div>
-          <p>Social account</p>
+          <p>Social accounts</p>
         </div>
         <div className="socialmedia-container">
           <a href="#">

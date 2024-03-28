@@ -189,6 +189,9 @@
 
 @media screen and (min-width: 1920px) {
   .Resume {
+    & .heading-resume {
+      width: 70%;
+    }
     & .content-resume {
       width: 75%;
     }
