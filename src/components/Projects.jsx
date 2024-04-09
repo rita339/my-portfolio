@@ -43,7 +43,11 @@ export const Projects = () => {
             <img src="./Frame.png" alt="Frame" />
           </div>
 
-          <a href="#" className="project-text" target="_blank">
+          <a
+            href="https://magnificent-swan-5128b8.netlify.app/"
+            className="project-text"
+            target="_blank"
+          >
             <h2>UBL Project</h2>
             <p>
               The UBL Project is an initiative by the Independent Citizens'

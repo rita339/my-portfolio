@@ -32,25 +32,26 @@ export const Footer = () => {
                   <img src="./Logo.png" alt="Logo Bild" />
                 </Link>
                 <p>
-                  <p>
-                    Welcome to my digital home! Here, I share my passion for web
-                    development. Let's connect to discuss my skills and
-                    experiences. Feel free to reach out to me.
-                  </p>
+                  Welcome to my digital home! Here, I share my passion for web
+                  development. Let's connect to discuss my skills and
+                  experiences. Feel free to reach out to me.
                 </p>
               </div>
 
               <div className="social-links">
-                <a href="https://www.linkedin.com/in/julia-e-07bab42a4/">
+                <a
+                  href="https://www.linkedin.com/in/julia-e-07bab42a4/"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/rita339">
+                <a href="https://github.com/rita339" target="_blank">
                   <i className="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.instagram.com/">
+                <a href="https://www.instagram.com/" target="_blank">
                   <i className="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://www.xing.com/?gad_source=1">
+                <a href="https://www.xing.com/?gad_source=1" target="_blank">
                   <i className="fa-brands fa-xing"></i>
                 </a>
               </div>

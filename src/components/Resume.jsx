@@ -59,7 +59,7 @@ export const Resume = () => {
           {/* Item ----- 03 */}
           <div className="item-resume">
             <div className="item-heading">
-              <h2>Lviv Polytechnic University </h2>
+              <h2>Lviv National Polytechnic University </h2>
               <div className="badge-resume">
                 <p>September 2004 - December 2009</p>
               </div>
@@ -69,7 +69,8 @@ export const Resume = () => {
               <h3>Dipl. Applied Linguistics</h3>
               <p>
                 Driven by my passion for languages, I began my studies in
-                Applied Linguistics at Lviv Polytechnic University in 2004.
+                Applied Linguistics at Lviv National Polytechnic University in
+                2004. This was the beginning of my journey into the world of IT.
               </p>
             </div>
           </div>
