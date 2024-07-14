@@ -6,7 +6,10 @@ import emailjs from "@emailjs/browser";
 export const Contact = () => {
   const [emailSend, setEmailSend] = useState(false);
   const formRef = useRef();
-
+  // scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useEffect(() => {}, [emailSend]);
 
   const sendHandler = async (e) => {

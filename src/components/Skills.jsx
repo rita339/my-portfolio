@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import "./Skills.css";
 
 export const Skills = () => {
+  // scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="Skills">
       <article className="heading-skills">

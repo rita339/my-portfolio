@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import "./Footer.css";
 import { Slidingtext } from "./Slidingtext.jsx";
+import { useEffect } from "react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
