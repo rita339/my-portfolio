@@ -85,7 +85,7 @@
       border-radius: 3.5rem;
       background-color: var(--accent);
       cursor: pointer;
-      width: 10rem;
+      max-width: 10.1rem;
       & .icon-btn {
         display: flex;
         border: none;
