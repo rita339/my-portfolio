@@ -16,7 +16,15 @@
     display: none;
   }
 }
-
+@media screen and (max-width: 480px) {
+  .Slidingtext {
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    & li:nth-last-child(2) & li:nth-last-child(1) {
+      display: list-item;
+    }
+  }
+}
 @media screen and (min-width: 768px) {
   .Slidingtext {
     padding: 1.5rem 2rem;
